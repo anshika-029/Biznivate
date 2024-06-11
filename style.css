@@ -68,30 +68,32 @@ nav ul li:hover {
 
 main h1{
     font-size: 67px;
-    display: flex;
-    justify-content: center;
-    margin-top: revert;
+    text-align: center;
+    margin: 51px auto 61px auto;
+    max-width: 70vw;
 }
 
-main span{
-    font-size: 30px;
-    display: flex;
-    font-weight: 600;
-    text-align: center;
+/* main span{
+    font-size: 21px;
     width: 100vw;
-    justify-content: center;
     margin: 10px 0;
-    z-index: 10;
-}
+} */
+
+main .h{
+    font-size: 23px;
+    display: flex;
+    font-weight: 500;
+    text-align: center;
+    margin: 9vh 1vw 5vh 3vw;}
 
 .b{
     background-color: rgb(7, 6, 11);
     color: white;
     font-size: 16px;
     font-weight: 500;
-    padding: 12px 10px;
+    padding: 22px 35px;
     border-radius: 40px;
-    margin: 17px 45vw;
+    margin: 3px 1px 34px 20vw;
     border: 1px solid white;
 }
 .b:hover{
@@ -139,12 +141,13 @@ main span{
     width: 90vw;
     height: 500px;
     top: 5px;
-    margin:10px auto;
+    margin:10px auto 80vh auto;
     box-shadow: 0 0 3px black;
     position: relative;
     overflow-x: hidden;
     border: 2px solid black;
     color: black;
+
 }
 h2{
     text-align: center;
@@ -180,3 +183,22 @@ h3{
     max-width: 20vw;
 }
 
+.photo img{
+    border: 2px solid black;
+    border-radius: 90px;
+    margin: -21vw 3vw 1vw 54vw;
+}
+
+footer{
+    background-color: rgb(7, 6, 11);
+    display: grid;
+    grid-template-columns: 38vw 12vw 12vw 12vw;
+    padding: 16vh 10vw 18vh 14vw;
+}
+
+footer ul li{
+    color: white;
+}
+.fh{
+    font-weight: bold;
+}
