@@ -17,6 +17,25 @@ header {
     margin: auto;
 }
 
+nav ul{
+    float: right;
+}
+
+nav li{
+    display: inline-block;
+    list-style: none;
+}
+
+nav li a {
+    color: black;
+    text-decoration: none;
+    padding: 6px 20px;
+    font-size: 15px;
+    font-weight: 700;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+} 
+
 nav ul {
     display: flex;
     list-style: none;
@@ -55,8 +74,9 @@ nav ul li:hover {
 
 .but:hover {
     border: 1px solid rgb(107, 107, 107);
-    background-color: rgb(157 80 31 / 87%);
+    background-color: #282c5a6e;
     cursor: pointer;
+    color: black;
 }
 
 .seperation {
@@ -100,9 +120,10 @@ main h1 {
 }
 
 .b:hover {
-    background-color: rgb(157 80 31 / 87%);
+    background-color: #282c5a6e;
     cursor: pointer;
-    /* margin-top: 46px; */
+    border: 1px solid black;
+    color: black;
 }
 
 .imgtext {
@@ -128,6 +149,16 @@ main h1 {
     padding-top: 8vh;
 }
 
+.fhead {
+    font-size: 40px;
+    text-align: center;
+    width: 38%;
+    padding: 9px;
+    margin: 11vh auto 8vh auto;
+    background-color: #7071754f;
+    border-radius: 19px;
+}
+
 .textimg p {
     font-size: 20px;
     font-weight: 400;
@@ -142,6 +173,53 @@ main h1 {
     border: 5px solid black;
     float: right;
     margin-top: 5vh;
+}
+
+
+.first {
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    width: 65%;
+}
+.secimg img {
+    height: 23vh;
+    width: 20vw;
+    border-radius: 50px;
+    border: 3px solid #282c5a6e;
+    margin: 0 30px;
+    cursor: pointer;
+}
+
+.secimg img:hover{
+    border: 3px solid black;
+}
+
+.first .hf {
+    font-size: 2rem;
+    font-weight: 900;
+    font-family: cursive;
+    margin: 15vh 15vw;
+    text-align: center;
+    cursor: pointer;
+}
+
+.first .hf:hover{
+    color: #282c5a6e;
+}
+
+.first .pf {
+    font-size: 1.5rem;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 40px 0 0 0;
+}
+
+hr{
+    width: 76%;
+    margin: 10px auto;
 }
 
 .slide{
@@ -234,7 +312,7 @@ h3 {
     float: right;
 }
 
-.hero {
+.ques {
     display: flex;
     color: black;
     align-items: center;
@@ -244,7 +322,6 @@ h3 {
 }
 
 .backg{
-    /* background-image: url('https://www.shutterstock.com/image-illustration/question-mark-icon-isolated-on-260nw-1150782911.jpg'); */
     background-image: url('https://media.istockphoto.com/id/494094966/vector/question-mark-3d-seamless-wallpaper-pattern.jpg?s=612x612&w=0&k=20&c=u56aWdaxkF1T4k745zLP3egh7scxb4FjwaNpZpiLA44=');
     background-repeat: no-repeat;
     background-size: 80vw;
@@ -253,15 +330,15 @@ h3 {
     padding: 80px;
     width: 60%;
     border-radius: 30px;
-    margin: 60px auto;
+    margin:20px auto;
 }
 
-.hero> :nth-child(1) {
+.ques> :nth-child(1) {
     font-weight: 900;
     font-size: 48px;
 }
 
-.hero> :nth-child(2) {
+.ques> :nth-child(2) {
     font-weight: 600;
     font-size: 1.3rem;
     text-align: center;
