@@ -1,27 +1,62 @@
-import React from 'react'
-import '../Styles/Navbar.css'
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
+import "../Styles/Navbar.css";
 
 function Navbar() {
-  return (
-    <div>
-       <header>
-        <div className="logo"><img width="180" height="50"
-                src="https://biznivate.com/biznivate/assets/biznivate/biznivate.svg" alt="logo"/></div>
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
+  return (
+    <header className="header">
+      <div className="container">
+        <div className="logo">
+          <img
+            width="180"
+            height="50"
+            src="https://biznivate.com/biznivate/assets/biznivate/biznivate.svg"
+            alt="logo"
+          />
+        </div>
         <nav>
-            <ul>
-                <li> <a href='/'>Home</a> </li>
-                <li> <a href='/service'>Services</a> </li>
-                <li> <a href='/carrers'>Carrers</a> </li>
-                <li> <a href='/about'>About Us</a> </li>
-                <li> <a href='/blog'>Blogs</a> </li>
-                <a href='/contact'><button className='but'>Contact </button></a>
-            </ul>
-        </nav>
-    </header>
+          <ul className={`nav-links ${isMenuOpen ? "active" : ""}`}>
+          {/* Proper Way to link routing in css ( avoid using anchor tags) */}
+            <li>
+              <Link to="/">Home</Link>
+            </li>
+            <li>
+              <Link to="/about">About Us</Link>
+            </li>
+            <li>
+              <Link to="/service">Services</Link>
+            </li>
+            <li>
+              <Link to="/careers">Careers</Link>
+            </li>
+            <li>
+              <Link to="/blog">Blogs</Link>
+            </li>
+          </ul>
     
-    </div>
-  )
+          <ul className={`nav-links ${isMenuOpen ? "active" : ""}`}>
+            <li style={{ listStyle: "none" }}>
+              <Link to="/contact">
+                <button className="btn">Contact Us</button>
+              </Link>
+            </li>
+          </ul>
+
+          <button className="burger" onClick={toggleMenu}>
+            <FontAwesomeIcon icon={isMenuOpen ? faTimes : faBars} />
+          </button>
+        </nav>
+      </div>
+    </header>
+  );
 }
 
-export default Navbar
+export default Navbar;

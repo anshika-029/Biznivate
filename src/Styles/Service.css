@@ -1,63 +1,105 @@
-.serviceimg {
-    background-image: url('https://www.shutterstock.com/image-photo/business-solutions-success-strategy-concept-600nw-313786025.jpg');
-    background-size: cover;
-}
+@import '~@fortawesome/fontawesome-free/css/all.min.css';
 
 .service-container {
-    margin: 45vh auto 25vh 9vw;
-    padding: 2vw;
-    width: 81vw;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 60px;
+  margin: 5vh auto;
+  padding: 2vw;
+  width: 90vw;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 35px;
 }
 
-.servicecards {
-    border-radius: 21px;
-    border: 1px solid gray;
-    width: 36vw;
-    transition: 0.5s;
+.service-card {
+  border-radius: 12px;
+  border: 1px solid #ddd;
+  overflow: hidden;
+  background: #fff;
+  transition: transform 0.3s, box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
 }
 
-.servicecards:hover{
-    transform: scale(1.05);
+.service-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
-.s1 {
-    text-align: center;
-    font-size: 1.7em;
-    font-weight: 700;
-    font-family: cursive;
-    padding: 20px;
-    cursor: pointer;
+.card-header {
+  width: 100%;
 }
 
-.s1:hover{
-    color: #100ac7;
+.card-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.3s;
 }
 
-.s3 {
-    font-weight: 500;
-    color: rgb(68, 68, 68);
-    font-size: 1.1em;
-    padding: 17px 16px 16px 36px;
+.card-image:hover {
+  transform: scale(1.1);
 }
 
-.s2 img {
-    width: 36vw;
-    height: 30vh;
-    transition: transform 0.5s;
+.card-body {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
 }
 
-.s4 {
-    margin: 0;
-    border-radius: 0px;
-    text-align: center;
-    font-size: 1.3em;
-    padding: 14px;
-    bottom: 0;
+.card-title {
+  font-size: 1.4em;
+  font-weight: 700;
+  font-family: 'Arial', sans-serif;
+  margin-bottom: 10px;
+  color: #333;
 }
 
-.s4:hover{
-    transition: 0.5s;
+.card-description {
+  font-size: 1em;
+  color: #666;
+  text-align: justify;
+  flex-grow: 1;
+}
+
+.card-button {
+  margin: 10px 0 0;
+  text-align: center;
+  font-size: 1.2em;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-button i {
+  margin-left: 10px;
+  transition: transform 0.3s;
+}
+
+.card-button:hover {
+  background-color: #0056b3;
+}
+
+.card-button:hover i {
+  transform: translateX(5px);
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+  .service-container {
+    width: 100%;
+    padding: 1vw;
+  }
+
+  .card-title, .card-description, .card-button {
+    font-size: 1em;
+  }
+
+  .card-image {
+    height: 150px;
+  }
 }

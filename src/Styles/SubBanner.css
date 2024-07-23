@@ -1,0 +1,87 @@
+.flexwrap {
+  width: 80vw;
+  background-color: white;
+  margin: -23vh auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-radius: 15px;
+  box-shadow: 0.1px 1px 4px #b4b4b6;
+  overflow: hidden;
+}
+
+.carrerimg {
+  background-size: cover;
+  background-position: center;
+}
+
+.contacth3 {
+  font-size: 2.5em;
+  font-weight: 600;
+  font-family: "Noto Sans", sans-serif;
+}
+
+.ccontainer {
+  padding: 2rem;
+  font-family: "Noto Sans", sans-serif;
+}
+
+.ccontainer p {
+  margin: 1rem 0;
+  font-size: 1em;
+  font-family: "Noto Sans", sans-serif;
+}
+
+.ccontainer .but {
+  margin-top: 1.5rem;
+  padding: 0.75rem 2rem;
+  font-size: 1.1em;
+  background-color: #fe214f;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.ccontainer .but:hover {
+  background-color: #0056b3;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .flexwrap {
+    grid-template-columns: 1fr;
+    width: 90vw;
+    margin: -15vh auto;
+  }
+
+  .contacth3 {
+    font-size: 2em;
+  }
+
+  .ccontainer p {
+    font-size: 1em;
+  }
+
+  .ccontainer .but {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 480px) {
+  .flexwrap {
+    width: 100vw;
+    margin: -10vh auto;
+  }
+
+  .contacth3 {
+    font-size: 1.75em;
+  }
+
+  .ccontainer p {
+    font-size: 0.9em;
+  }
+
+  .ccontainer .but {
+    font-size: 0.9em;
+  }
+}

@@ -1,27 +1,44 @@
-.terms{
-    height: 55vh;
+.conditions {
+    padding: 2.4rem;
+    background-color: #f9f9f9;
 }
 
 .termshead {
-    font-size: 1.4em;
-    font-weight: 600;
-    padding: 10px 0;
-    color: #3c4043;
+    font-size: 1.7em;
+    font-weight: 700;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    color: #333;
 }
 
 .termspara {
-    font-weight: 400;
-    padding-bottom: 26px;
-}
-
-.conditions{
-    padding: 7vh 20vw 17vh 10vw;
-}
-
-.termshead.ad{
     font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    color: #555;
 }
 
-.termspara.ad{
-    padding-bottom: 1px;
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .termshead {
+        font-size: 1.75em;
+        margin-top: 1rem;
+        margin-bottom: 0.75rem;
+    }
+
+    .termspara {
+        font-size: 1.1em;
+    }
+}
+
+@media (max-width: 480px) {
+    .termshead {
+        font-size: 1.5em;
+        margin-top: 0.75rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .termspara {
+        font-size: 1em;
+    }
 }

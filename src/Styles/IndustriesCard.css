@@ -1,0 +1,128 @@
+.section__container {
+  max-width: 1200px;
+  margin: auto;
+  padding-top: 40px;
+}
+
+.img-industries {
+  display: flex;
+  width: 100%;
+}
+
+.section__subheader {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #475569;
+  letter-spacing: 1px;
+  font-family: "Noto Sans", sans-serif;
+}
+
+.section__header {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #0f172a;
+  font-family: "Noto Sans", sans-serif;
+}
+
+.industries__container :is(.section__subheader, .section__header) {
+  text-align: center;
+  max-width: 600px;
+  margin-inline: auto;
+}
+
+.industries__content {
+  max-width: 1024px;
+  margin-inline: auto;
+  margin-top: 4rem;
+  position: relative;
+  isolation: isolate;
+}
+
+.industries__content .img-industries {
+  max-width: 700px;
+  height: 600px;
+  margin-inline: auto;
+  opacity: 0.5;
+}
+
+.industries__card {
+  position: absolute;
+  max-width: 200px;
+}
+
+.industries__card span {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+  padding: 10px 13px;
+  font-size: 1.5rem;
+  color: var(--primary-color);
+  background-color: #f2f2f2;
+  border: 4px solid #fff;
+  border-radius: 5px;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.industries__card h4 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #0f172a;
+  font-family: "Noto Sans", sans-serif;
+}
+
+.industries__card:nth-child(1) {
+  top: 5rem;
+  left: 1rem;
+}
+
+.industries__card:nth-child(2) {
+  top: 50%;
+  left: 1rem;
+  transform: translateY(-50%);
+}
+
+.industries__card:nth-child(3) {
+  bottom: 5rem;
+  left: 1rem;
+}
+
+.industries__card:nth-child(4) {
+  top: 5rem;
+  right: 1rem;
+  text-align: right;
+}
+
+.industries__card:nth-child(5) {
+  top: 50%;
+  right: 1rem;
+  transform: translateY(-50%);
+  text-align: right;
+}
+
+.industries__card:nth-child(6) {
+  bottom: 5rem;
+  right: 1rem;
+  text-align: right;
+}
+
+@media (width > 768px) {
+  .industries__content .img-industries {
+    opacity: 1;
+  }
+
+  .industries__card:nth-child(1) {
+    left: 5rem;
+  }
+
+  .industries__card:nth-child(3) {
+    left: 5rem;
+  }
+
+  .industries__card:nth-child(4) {
+    right: 5rem;
+  }
+
+  .industries__card:nth-child(6) {
+    right: 5rem;
+  }
+}

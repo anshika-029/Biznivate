@@ -1,86 +1,81 @@
-import React from 'react'
-import '../Styles/Carrers.css'
+import React from "react";
+import "../Styles/Carrers.css";
+import Banner from "../components/Banner";
+import SubBanner from "../components/SubBanner";
 
 function Carrers() {
+  const careerData = [
+    {
+      title: "Digital Marketing Manager",
+      link: "/jobdescription",
+      location: "Remote - UK - Full Time",
+    },
+    {
+      title: "Social Media Manager",
+      link: "/jobdescription",
+      location: "Remote - UK - Full Time",
+    },
+    {
+      title: "Email Marketing Manager",
+      link: "/jobdescription",
+      location: "Remote - UK - Full Time",
+    },
+    {
+      title: "SEO Specialist",
+      link: "/jobdescription",
+      location: "Remote - UK - Full Time",
+    },
+    {
+      title: "Digital Analytics Specialist",
+      link: "/jobdescription",
+      location: "Remote - UK - Full Time",
+    },
+    {
+      title: "Content Marketer",
+      link: "/jobdescription",
+      location: "Remote - UK - Full Time",
+    },
+    {
+      title: "Logo Designer",
+      link: "/jobdescription",
+      location: "Remote - UK - Full Time",
+    },
+    { title: "CRM Manager", link: "/jobdescription", location: "Remote - UK - Full Time" },
+  ];
+
   return (
     <div>
-      <div className='headbg'>
-        <div className='head1'>Carrers</div>
-        <div className='head2'>Want to work with us.</div>
-        <div className='head2'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id, repudiandae.</div>
-      </div>
-      <div className='flexwrap'>
-        <div className='carrerimg'></div>
+     {/* Banner Component */}
+      <Banner
+        title="Careers"
+        subtitle="Want to work with us."
+        additionalText="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id, repudiandae."
+      />
 
-        <div className='ccontainer'>
-          <div className='contacth3'> Heading </div>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem nihil, corrupti numquam maxime nesciunt a amet!</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam accusantium, doloribus laboriosam,  temporibus, necessitatibus itaque? Dolore optio, ullam quibusdam sapiente  eos earum dignissimos sint non.</p>
-          <button className='but'> Join Us </button>
-        </div>
-      </div>
+       {/* Sub-Banner Component */}
+      <SubBanner
+        heading="Join Our Team"
+        imageUrl="https://media.istockphoto.com/id/1351993340/photo/asian-business-person-responding-at-the-customer-center.jpg?s=612x612&w=0&k=20&c=zrgcIgJo129KqYSZ3IhwGP3ExwGgYHbXu0t1ZID5B_I="
+        buttonText="Apply Now"
+      />
 
-
-      <div className='carrercontainer'>
-        <div className='carrercards'>
-          <div className='carrer-h-row'>
-            <div className='c1'>Digital Marketing Manager</div><div><a href='/digitalmarketingmanager'><button className='but'>Read More</button></a></div>
+      <div className="carrercontainer">
+        {careerData.map((career, index) => (
+          <div key={index} className="carrercards">
+            <div className="carrer-h-row">
+              <div className="c1">{career.title}</div>
+            </div>
+            <div className="c1h">{career.location}</div>
+            <div>
+                <a href={career.link}>
+                  <button className="but">Read More</button>
+                </a>
+              </div>
           </div>
-          <div className='c1h'>Remote - UK - Full Time</div>
-        </div>
-
-        <div className='carrercards'>
-          <div className='carrer-h-row'>
-            <div className='c1'>Social Media Manager</div><div><a href='/socialmediamanager'><button className='but'>Read More</button></a></div>
-          </div>
-          <div className='c1h'>Remote - UK - Full Time</div>
-        </div>
-
-        <div className='carrercards'>
-          <div className='carrer-h-row'>
-            <div className='c1'>Email Marketing Manager</div><div><a href='/emailmarketingmanager'><button className='but'>Read More</button></a></div>
-          </div>
-          <div className='c1h'>Remote - UK - Full Time</div>
-        </div>
-
-        <div className='carrercards'>
-          <div className='carrer-h-row'>
-            <div className='c1'>SEO Specialist</div><div><a href='/seo'><button className='but'>Read More</button></a></div>
-          </div>
-          <div className='c1h'>Remote - UK - Full Time</div>
-        </div>
-
-        <div className='carrercards'>
-          <div className='carrer-h-row'>
-            <div className='c1'>Digital Analytics Specialist</div><div><a href='/digitalanalytics'><button className='but'>Read More</button></a></div>
-          </div>
-          <div className='c1h'>Remote - UK - Full Time</div>
-        </div>
-
-        <div className='carrercards'>
-          <div className='carrer-h-row'>
-            <div className='c1'>Content Marketer</div><div><a href='/contentmaker'><button className='but'>Read More</button></a></div>
-          </div>
-          <div className='c1h'>Remote - UK - Full Time</div>
-        </div>
-
-        <div className='carrercards'>
-          <div className='carrer-h-row'>
-            <div className='c1'>Logo Designer</div><div><a href='/logodesigner'><button className='but'>Read More</button></a></div>
-          </div>
-          <div className='c1h'>Remote - UK - Full Time</div>
-        </div>
-
-        <div className='carrercards'>
-          <div className='carrer-h-row'>
-            <div className='c1'>CRM Manager</div><div><a href='/crm'><button className='but'>Read More</button></a></div>
-          </div>
-          <div className='c1h'>Remote - UK - Full Time</div>
-        </div>
-
+        ))}
       </div>
     </div>
-  )
+  );
 }
 
-export default Carrers
+export default Carrers;

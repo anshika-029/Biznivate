@@ -1,57 +1,87 @@
-.foot {
-    /* background-color: rgb(7, 6, 11); */
-    background-color: #17161A;
+.footer-container {
+    background-color: #002954;
+  }
+  
+  .footer {
+    padding: 4rem 2rem;
+  }
+  
+  .footer-grid {
     display: grid;
-    grid-template-columns: 28vw 15vw 13vw 16vw;
-    padding: 14vh 8vw 11vh 12vw;
-}
-
-footer ul li {
-    color: #ffff;
-    padding: 5px;
-}
-
-footer ul li a{
-    text-decoration: none;
-    color: white;
-}
-
-footer ul li a:hover{
-    /* text-decoration: none; */
-    color: rgb(174, 174, 174);
-}
-
-.fh {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .logo-footer img {
+    max-width: 100%;
+  }
+  
+  .footer-heading {
     font-weight: bold;
-}
-
-.copyright{
-    color: #ffff;
-    text-align: center;
-    background-color: #17161A;
-    padding: 2vh 0;
-    font-size: 1.2em;
-}
-
-.fhr{
+    margin-bottom: 1rem;
+  }
+  
+  .footer ul li {
+    color: #fff;
+    margin-bottom: 0.5rem;
+  }
+  
+  .footer ul li a {
+    text-decoration: none;
+    color: rgb(174, 174, 174);
+    padding: 0px 0 50px 0;
+    font-size: 1.1rem;
+  }
+  
+  .footer ul li a:hover {
+    color: rgb(174, 174, 174);
+  }
+  
+  .social-icons {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .icon {
     color: white;
-    padding: 0;
-    margin: auto;
-    width: 76%;
-}
-
-.icon{
-    padding-right: 25px;
-    color: white;
-    font-size: 30px;
-}
-.icon:hover{
+    font-size: 1.875rem;
+  }
+  
+  .icon:hover {
     color: #1338cb;
-}
-
-.icon.dead:hover{
-    color: white;
-}
-.icon.dead{
-    padding: 0;
-}
+  }
+  
+  .footer-hr {
+    border-color: white;
+    margin: 2rem 0;
+    width: 100%;
+  }
+  
+  .copyright {
+    color: #fff;
+    text-align: center;
+    padding: 0.1rem 0;
+    font-size: 1.2rem;
+  }
+  
+  /* Media Queries for Responsiveness */
+  @media (min-width: 768px) {
+    .footer {
+      padding: 4rem 5rem;
+    }
+  
+    .footer-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .footer {
+      padding: 4rem 10rem;
+    }
+  
+    .footer-grid {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+  

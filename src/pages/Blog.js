@@ -1,36 +1,80 @@
-import React from 'react'
-import '../Styles/Blog.css'
+import React from "react";
+import "../Styles/Blog.css";
+import Banner from "../components/Banner";
 
 function Blog() {
+  const blogData = [
+    {
+      id: 1,
+      date: "Admin | August 15, 2023",
+      text: "Lorem ipsum dolor sit amet. Lorem ipsum dolor, sit amet consectetur adipisicing.",
+      image:
+        "https://img.freepik.com/premium-photo/laptop-notebook-desk_1048944-30522547.jpg?size=626&ext=jpg&ga=GA1.1.1730006803.1721025434&semt=ais_user",
+    },
+    {
+      id: 2,
+      date: "Admin | August 15, 2023",
+      text: "Lorem ipsum dolor sit amet. Lorem ipsum dolor, sit amet consectetur adipisicing.",
+      image:
+        "https://images.pexels.com/photos/303383/pexels-photo-303383.jpeg?cs=srgb&dl=pexels-veeterzy-303383.jpg&fm=jpg",
+    },
+    {
+      id: 3,
+      date: "Admin | August 15, 2023",
+      text: "Lorem ipsum dolor sit amet. Lorem ipsum dolor, sit amet consectetur adipisicing.",
+      image:
+        "https://images.pexels.com/photos/303383/pexels-photo-303383.jpeg?cs=srgb&dl=pexels-veeterzy-303383.jpg&fm=jpg",
+    },
+    {
+      id: 4,
+      date: "Admin | August 15, 2023",
+      text: "Lorem ipsum dolor sit amet. Lorem ipsum dolor, sit amet consectetur adipisicing.",
+      image:
+        "https://images.pexels.com/photos/303383/pexels-photo-303383.jpeg?cs=srgb&dl=pexels-veeterzy-303383.jpg&fm=jpg",
+    },
+    {
+      id: 5,
+      date: "Admin | August 15, 2023",
+      text: "Lorem ipsum dolor sit amet. Lorem ipsum dolor, sit amet consectetur adipisicing.",
+      image:
+        "https://images.pexels.com/photos/303383/pexels-photo-303383.jpeg?cs=srgb&dl=pexels-veeterzy-303383.jpg&fm=jpg",
+    },
+    {
+      id: 6,
+      date: "Admin | August 15, 2023",
+      text: "Lorem ipsum dolor sit amet. Lorem ipsum dolor, sit amet consectetur adipisicing.",
+      image:
+        "https://images.pexels.com/photos/303383/pexels-photo-303383.jpeg?cs=srgb&dl=pexels-veeterzy-303383.jpg&fm=jpg",
+    },
+  ];
   return (
     <div>
-      <div className='headbg terms'>
-        <div className='head1'>Blogs</div>
-        <div className='head2'>Lorem ipsum dolor Lorem, ipsum.</div>
-        <div className='head2'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, tempore aspernatur?</div>
-      </div>
+    {/* Banner Component */}
+      <Banner
+        title="Blogs"
+        subtitle="Lorem ipsum dolor Lorem, ipsum."
+        additionalText=" Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque,
+          tempore aspernatur?"
+      />
 
-      {/* <div className='flexwrap'>
-        <div className='gridimg blog'></div>
-        <div className='ccontainer'>
-          <div className='contacth3'> Heading </div>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic earum alias fugit repellendus repudiandae, maiores in ?</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, inventore praesentium odit aperiam, culpa atque veniam quod id tenetur voluptates rem deleniti labore sapiente, magni laudantium provident autem unde cumque facere pariatur quos facilis distinctio nostrum corrupti!.</p>
-          <button className='but'> Join Us </button>
-        </div>
-      </div> */}
-
-
-      <div className='blogcontainer'>
-        <a><div className='blogcards b1'><div className='b1h'><div className='pbdate'>Admin | August 15, 2023</div>Lorem ipsum dolor sit amet. Lorem ipsum dolor, sit amet consectetur adipisicing.</div> <button className='but'>Read More</button></div></a>
-        <a><div className='blogcards b2'><div className='b2h'><div className='pbdate'>Admin | August 15, 2023</div>Lorem ipsum dolor sit amet. Lorem ipsum dolor, sit amet consectetur adipisicing.</div> <button className='but'>Read More</button></div></a>
-        <a><div className='blogcards b3'><div className='b3h'><div className='pbdate'>Admin | August 15, 2023</div>Lorem ipsum dolor sit amet. Lorem ipsum dolor, sit amet consectetur adipisicing.</div> <button className='but'>Read More</button></div></a>
-        <a><div className='blogcards b4'><div className='b4h'><div className='pbdate'>Admin | August 15, 2023</div>Lorem ipsum dolor sit amet. Lorem ipsum dolor, sit amet consectetur adipisicing.</div> <button className='but'>Read More</button></div></a>
-        <a><div className='blogcards b5'><div className='b5h'><div className='pbdate'>Admin | August 15, 2023</div>Lorem ipsum dolor sit amet. Lorem ipsum dolor, sit amet consectetur adipisicing.</div> <button className='but'>Read More</button></div></a>
-        <a><div className='blogcards b6'><div className='b6h'><div className='pbdate'>Admin | August 15, 2023</div>Lorem ipsum dolor sit amet. Lorem ipsum dolor, sit amet consectetur adipisicing.</div> <button className='but'>Read More</button></div></a>
+      <div className="blog-container">
+      {/* Product Mapping */}
+        {blogData.map((blog) => (
+          <div
+            key={blog.id}
+            className="blog-card"
+            style={{ backgroundImage: `url(${blog.image})` }}
+          >
+            <div className="blog-content">
+              <div className="blog-date">{blog.date}</div>
+              <p>{blog.text}</p>
+              <button className="read-more">Read More</button>
+            </div>
+          </div>
+        ))}
       </div>
     </div>
-  )
+  );
 }
 
-export default Blog
+export default Blog;
