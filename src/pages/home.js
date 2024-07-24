@@ -4,8 +4,7 @@ import Main from '../components/Main.js'
 function Home() {
   return (
     <div>
-      {/* <Main /> */}
-      heloo world
+      <Main />
     </div>
   )
 }
