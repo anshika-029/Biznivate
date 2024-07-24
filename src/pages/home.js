@@ -1,26 +1,15 @@
-// import React from 'react'
-// import Main from '../components/Main.js'
-
-// function Home() {
-//   return (
-//     <div>
-//       <Main/>
-//     </div>
-//   )
-// }
-
-// export default Home;
-
-import React from 'react';
-import Main from '../components/Main.js';
+import React from 'react'
+import Main from '../components/Main.js'
 
 function Home() {
   return (
     <div>
-      <Main />
+      {/* <Main /> */}
+      heloo world
     </div>
-  );
+  )
 }
 
 export default Home;
+
 
