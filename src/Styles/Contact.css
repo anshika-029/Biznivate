@@ -57,7 +57,7 @@ textarea {
 
 .ccontactdetails .fa-solid {
   margin: 1px 12px -4px 0;
-  color: #fe214f;
+  color: #110934;
 }
 
 /* Button Styling */
@@ -67,7 +67,7 @@ textarea {
   font-size: 1.1em;
   border: none;
   border-radius: 6px;
-  background-color: #fe214f;
+  background-color:#110934;
   color: white;
   cursor: pointer;
   transition: background-color 0.3s;

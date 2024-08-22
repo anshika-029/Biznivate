@@ -25,12 +25,12 @@
 }
 
 .btn__primary {
-  background-color: #fe214f;
-  border-color: #fe214f;
+  background-color: #110934;
+  border-color: #1109349c;
 }
 
 .btn__primary:hover {
-  background-color: #d4133a;
+  background-color: #11093462;
 }
 
 .btn__secondary {
@@ -52,7 +52,8 @@ img {
       rgba(11, 20, 35, 0.8),
       rgba(11, 20, 35, 0.8)
     ),
-    url("https://i.ibb.co/GcjjPHF/Image-12.webp");
+    url("https://png.pngtree.com/thumb_back/fw800/background/20240224/pngtree-a-dark-office-room-in-home-image_15630921.jpg");
+    /* url("https://i.ibb.co/GcjjPHF/Image-12.webp"); */
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -87,7 +88,7 @@ img {
   font-size: 3rem;
   font-weight: 600;
   line-height: 3.5rem;
-  color: #fe214f;
+  color: white;
   font-family: "Noto Sans", sans-serif;
 }
 

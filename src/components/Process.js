@@ -8,7 +8,7 @@ function Process() {
         <div className="service__image">
           <img
             className="process-img"
-            src="https://i.ibb.co/jV4yNBP/process.png"
+            src="https://t3.ftcdn.net/jpg/02/84/26/68/360_F_284266805_aRzEfFUZdDoENmDkrZqb0pDm6ByCv1QM.jpg"
             alt="service"
           />
         </div>

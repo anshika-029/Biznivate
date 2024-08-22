@@ -1,6 +1,7 @@
 .headbg {
     height: 65vh;
-    background-color: #26395e;
+    /* background-color: #26395e; */
+    background-color: #172028;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -13,8 +14,8 @@
     text-align: center;
     font-size: 3em;
     font-weight: 900;
-    margin-bottom: 1rem;
-    margin-top: 3rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
     font-family: "Noto Sans", sans-serif;
 }
 
@@ -23,7 +24,7 @@
     text-align: center;
     font-weight: 500;
     font-size: 1.3em;
-    margin: 0.5rem 0;
+    margin-bottom: 2rem;
     max-width: 80vw;
     font-family: "Noto Sans", sans-serif;
 }
@@ -32,22 +33,26 @@
 @media (max-width: 768px) {
     .head1 {
         font-size: 1.5em;
-        margin-top: 70px;
+        margin-top: 40px;
     }
 
     .head2 {
-        font-size: 0.8em;
+        font-size: 1em;
     }
 }
 
 @media (max-width: 480px) {
     .head1 {
         font-size: 1em;
-        margin-top: 70px;
+        margin-top: 40px;
     }
 
     .head2 {
-        font-size: 0.6em;
+        font-size: 1em;
         font-weight: 400;
+    }
+
+    .headbg{
+        width: 100%;
     }
 }

@@ -15,7 +15,7 @@ function About() {
        {/* Sub-Banner Component */}
       <SubBanner
         heading="About Biznivate"
-        imageUrl="https://media.istockphoto.com/id/1351993340/photo/asian-business-person-responding-at-the-customer-center.jpg?s=612x612&w=0&k=20&c=zrgcIgJo129KqYSZ3IhwGP3ExwGgYHbXu0t1ZID5B_I="
+        imageUrl="https://imageio.forbes.com/specials-images/imageserve/66056bf893561bd405ef907a/Sunset--window-and-back-of-woman-in-the-office-thinking--planning-and-brainstorming/960x0.jpg?height=374&width=711&fit=bounds"
         buttonText="Apply Now"
       />
 

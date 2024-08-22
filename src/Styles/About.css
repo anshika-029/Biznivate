@@ -28,7 +28,7 @@
 .about-grid-col1 :nth-child(1) {
     display: block;
     margin-left: 9vw;
-    font-size: 3em;
+    font-size: 2em;
     font-weight: 800;
     color: #121213;
 }
@@ -44,7 +44,7 @@
 .about-grid2-col1 :nth-child(1) {
     display: block;
     margin: 0 3vw;
-    font-size: 2.7em;
+    font-size: 2em;
     font-weight: 800;
     color: #121213;
 }
@@ -143,12 +143,19 @@
     }
 
     .about-grid-col2 img, .aboutus-grid2 img {
-        width: 100%;
+        width: 98%;
         height: auto;
+        margin-left: 0;
+    }
+
+    .about-grid2-col1 :nth-child(1){
+        margin: 20px;
     }
 
     .aboutus-grid4 {
         grid-template-columns: 1fr 1fr;
+        margin: auto;
+        padding: 0px;
     }
 }
 
@@ -163,6 +170,8 @@
 
     .aboutus-grid4 {
         grid-template-columns: 1fr;
+        margin: auto;
+        padding: 0px;
     }
 
     .grid4-card {

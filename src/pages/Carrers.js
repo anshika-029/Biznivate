@@ -48,14 +48,14 @@ function Carrers() {
      {/* Banner Component */}
       <Banner
         title="Careers"
-        subtitle="Want to work with us."
-        additionalText="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id, repudiandae."
+        subtitle="Want to work with us. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id, repudiandae."
+        // additionalText=""
       />
 
        {/* Sub-Banner Component */}
       <SubBanner
         heading="Join Our Team"
-        imageUrl="https://media.istockphoto.com/id/1351993340/photo/asian-business-person-responding-at-the-customer-center.jpg?s=612x612&w=0&k=20&c=zrgcIgJo129KqYSZ3IhwGP3ExwGgYHbXu0t1ZID5B_I="
+        imageUrl="https://media.istockphoto.com/id/979622962/photo/hand-putting-wooden-cube-block-on-blue-background-with-word-career-and-copy-space-for-your.jpg?s=612x612&w=0&k=20&c=WtIeJMPJ-6ozlnpyps0R2TLwMSTYFtWAT6yRBQymRSg="
         buttonText="Apply Now"
       />
 

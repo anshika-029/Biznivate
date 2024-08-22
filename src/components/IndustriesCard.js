@@ -10,47 +10,26 @@ const IndustriesCard = () => {
           We are ensuring our best in every industries
         </h2>
         <div className="industries__content">
-          <div className="industries__card">
-            <span>
-              <i className="fas fa-tags"></i>
-            </span>
-            <h4>Financial</h4>
-          </div>
-          <div className="industries__card">
-            <span>
-              <i className="fas fa-rupee-sign"></i>
-            </span>
+          <a href="#">
+            <div className="industries_card" id="f">
+              <h4>Financial</h4>
+            </div>
+          </a>
+          <a href="#">
+            <div className="industries_card sm">
             <h4>Social Media</h4>
           </div>
-          <div className="industries__card">
-            <span>
-              <i className="fas fa-credit-card"></i>
-            </span>
+            </a>
+          <a href="#">
+            <div className="industries_card m">
             <h4>Marketing</h4>
           </div>
-          <div className="industries__card">
-            <span>
-              <i className="fas fa-trophy"></i>
-            </span>
+            </a>
+          <a href="#">
+            <div className="industries_card it">
             <h4>IT Technology</h4>
           </div>
-          <div className="industries__card">
-            <span>
-              <i className="fas fa-user-cog"></i>
-            </span>
-            <h4>HR Management</h4>
-          </div>
-          <div className="industries__card">
-            <span>
-              <i className="fas fa-car"></i>
-            </span>
-            <h4>IT Technology</h4>
-          </div>
-          <img
-            className="img-industries"
-            src="https://i.ibb.co/Vvc3hR5/beautiful-young-woman-with-six-hands-white-background-567313-18539.jpg"
-            alt="industries"
-          />
+            </a>
         </div>
       </section>
     </div>

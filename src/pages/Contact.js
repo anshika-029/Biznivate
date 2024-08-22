@@ -25,8 +25,8 @@ function Contact() {
       {/* Banner Component */}
       <Banner
         title="Get in Touch"
-        subtitle="Have any questions?"
-        additionalText="Reach out to us from our contact form and we will get back to you shortly."
+        subtitle="Have any questions? Reach out to us from our contact form and we will get back to you shortly."
+        // additionalText="Reach out to us from our contact form and we will get back to you shortly."
       />
 
       {/* Sub-Banner Component */}

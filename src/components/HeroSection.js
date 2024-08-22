@@ -1,11 +1,13 @@
 import React from "react";
 import "../Styles/hero.css";
+import { Link } from 'react-router-dom';
+
 
 function HeroSection() {
   return (
     <div>
       <header class="header-hero">
-      {/* Hero Section - Contents */}
+        {/* Hero Section - Contents */}
         <div class="sectionContainer header__container">
           <h1>HR Innovation for streamlined success</h1>
           <p class="section__description">
@@ -13,9 +15,12 @@ function HeroSection() {
             processes.
           </p>
           <div class="header__btns">
-            <button class="btn-hero btn__primary">
-              Call Now
-            </button>
+            <Link to="/contact">
+              <button class="btn-hero btn__primary">
+                Let's Talk
+              </button>
+            </Link>
+
             <button class="btn-hero btn__secondary">Get Quotation</button>
           </div>
         </div>
