@@ -18,7 +18,7 @@ function HomeBanner() {
             </li>
             <li>
               <h4>68%</h4>
-              <p>Cost savings</p>
+              <p>Cost saving</p>
             </li>
             <li>
               <h4>1K</h4>

@@ -12,7 +12,7 @@ function HeroSection() {
           <h1>HR Innovation for streamlined success</h1>
           <p class="section__description">
             Your partner for efficient, secure, and expertly managed HR
-            processes.
+            process.
           </p>
           <div class="header__btns">
             <Link to="/contact">

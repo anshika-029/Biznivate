@@ -1,7 +1,7 @@
 import React from "react";
+import Newsletter from "./Newsletter";
 import "../Styles/Main.css";
 import IndustriesCard from "./IndustriesCard";
-import Newsletter from "./Newsletter";
 import Process from "./Process";
 import HomeBanner from "./HomeBanner";
 import HeroSection from "./HeroSection";
