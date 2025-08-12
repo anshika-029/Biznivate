@@ -11,7 +11,7 @@ function Footer() {
             <ul>
               <li>
                 <div className="logo-footer">
-                {/* Logo */}
+                
                   <img
                     width="180"
                     height="50"
